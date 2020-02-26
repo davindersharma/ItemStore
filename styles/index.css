@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HOMEPAGE */
+a:active,a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* start */
+
+.nav-bar{
+    text-align: right;    
+}
+
+.nav-bar ul {
+    background: black;
+    color: white;
+    padding: 40px;
+}
+.nav-bar ul li{
+    display: inline;
+    margin: 10px;
+}
+
+
+/* search bar */
+.search-bar{
+    text-align: center;
+    /* padding-top: 10%; */
+    background-image:url('../assets/download.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height:400px; 
+}
+
+.background-img ul li{
+    position: relative;
+}
+
+.background-img ul li input{
+    position: absolute;
+    top: 95%;
+    left:50%;
+    transform: translate(-50%,-100%);
+}
+
+.search-bar h3{
+    color:black; 
+    font-size:25px;
+}
+
+.search-bar.form{
+    background-color: #2196F3;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar form  input[type="button"],.search-bar form  input[type="text"]
+ {
+    width: 70%;
+    padding:15px;
+    background-color: white;
+    padding: 20px;
+}
+.search-bar form  input[type="button"]{
+    background-color: blue;
+    color:white;
+}
+
+input{
+    /* width: 80%; */
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: white;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;}
+
+
+/* .forms div h1{
+    font-size:30px; 
+    padding:20px;
+    font-family:'sans-serif';
+    width:100%;
+    margin:auto;
+    text-align:center;
+ } */
+
+input[type="checkbox"]{
+    width: auto;
+     
+
+    
+}
+/* LoginPAGE */
+
+
+/* CREDIT FORMS */
+.form1{
+    background: #2196F3;
+    box-sizing: border-box;
+    text-align: center;
+    /* padding-left:60px;  */
+    
+}
+.add-cart{
+    
+}
+
+.back-img form{
+    width: auto;
+    text-align: left; 
+}
+
+#clr-btn{
+    background-color: blue;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 50px;     
+}
+.info-form,.shipping-form{
+   width: 50%;
+   text-align:left;
+   display: inline-block;
+   margin-top:100px;
+   float: left;
+
+}
+.info-form form input{  
+    width:80%;
+}
+
+.shipping-form form input{
+    width:80%;
+}
+.info-form form input[name="checkbox"]{
+    width:10px;
+
+}
+#clr-btn{
+
+}
+
+.back-img{
+    width: 100%;
+    height: calc(100vh - 98px - 173px);
+    background-image: url('../assets/oYUJG0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+.back-img form label[for="username"],label[for="password"]{
+    color:white;
+
+};
+
+#btn{
+    /* width:20%; */
+    margin-top:25px; 
+    padding: 10px;
+    background-color: coral;
+    color:white;
+
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    color:white;
+    background-color:#ff5722; 
+    text-align: center;
+    position: absolute; 
+    top:100%; 
+    transform:translateY(-100%);
+    width: 100%
+    
+}
+footer img{
+    padding: 20px 20px;
+    height: 50px;
+    width: 50px;
+}
+
+/* gallery */
+
+.background-img{
+    background-image:url('../assets/cool.jpg');
+    width:100%;    
+    background-size:cover;
+    background-position: center;
+    /* height: calc(100vh - 98px); */
+    padding: 0 40px;
+    box-sizing: border-box
+}
+
+.background-img ul{
+    list-style: none;
+    text-align: center;
+}
+.background-img ul li{
+    box-sizing: border-box;
+    /* padding:30px; */
+    /* padding-bottom: 20px; */
+    
+
+    height:400px;
+    width:400px;
+    background:#fff;
+    border-radius: 4px;
+    display: inline-block;
+    /* margin: 10px; */
+    overflow: auto;
+
+}
+
+
+h1
+{
+    text-align: center;
+}
+
+ul li img{
+    /* height: 50%; */
+    height: 180px;
+    width: 200px;
+    /* border-radius: 5px;
+    margin-top: 15px; */
+}
+
+/* --------------------- */
+
+.background-img ul li h1
+{
+    color: #ff5722;
+}
+
+footer{
+    padding: 30px;
+    box-sizing: border-box
+}
+.formSumbit{
+    background-color: blue;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 50px;
+    width:83%;
+    
+}
+

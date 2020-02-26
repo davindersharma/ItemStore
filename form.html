@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>form</title>
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <style>
+         *{
+            margin: 0;
+            padding:0;
+            font-family: sans-serif;
+        }
+    h1{
+        font-size: 60px;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    h2{
+        padding: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;  
+    }
+    .form{
+        margin-left: 115px;
+    }
+   
+    </style>
+    </head>
+    <body class="form1">
+        <h1>CART</h1>
+        <div class="items">
+            <table>
+
+            </table>
+        </div>
+        <h2>FINALIZE PAYMENT</h2>
+        <section class="form">
+            <div class="info-form">
+                <form>
+                    <p>Credit card info</p>
+                    <label for="number">*Card Number</label><br>
+                    <input type="nbr" class="name" name="nbr" required>
+                    <br>
+                    <label for="number">*CVC</label>
+                    <br>
+                    <input type="nbr" class="CVC" name="nbr" required>
+                    <br>
+                    <label for="Name">*Name on the card</label>
+                    <br>
+                    <input type="text" class="C-name" name="name" required>
+                    <br>
+                    <label for="date">*Expiration</label>
+                    <br>
+                    <input type="month" class="E-date" name="date"
+                        placeholder="yyy/mm/dd" required><br>
+                    <input type="reset" name="btn" value="clear" id="clr-btn">
+                    <br>
+
+                    <label for="nbr">*Total purchase</label>
+                    <br>
+                    <input readonly type="text" class="total" name="price" required>
+                    <br><br>
+                    <label for="">*Show terms</label>
+                    <br>
+                    <input type="checkbox" name="checkbox">
+                    <label for="">*Agree terms and condations</label>
+                    <!-- <input type="checkbox" name="radio"> -->
+                    <!-- <input type="checkbox" name=""> -->
+                    <!-- <label for="">*Agree terms and condations</label> -->
+                    <br>
+                </form>
+            </div>
+            <div class="shipping-form">
+
+                <form class="form2">
+                    <p>Shipping address</p>
+                    <label for="name">*name</label>
+                    <br>
+                    <input type="text"  class= "CD-name" name="name" class="name" required>
+                    <br>
+                    <label for="address">*Address</label>
+                    <br>
+                    <input type="text" name="address" required>
+                    <br>
+                    <label for="address">*Address Line 2</label>
+                    <br>
+                    <input type="text" name="address" required>
+                    <br>
+                    <label for="city">*City</label>
+                    <br>
+                    <input type="text" class="city" name="city" required>
+                    <br>
+                    <label for="Pcode">*Postal Code</label>
+                    <br>
+                    <input type="text" class="postal" required>
+                    <br>
+                    <label for="Province">*Province</label>
+                    <br>
+                    <input type="text" class="province" name="Province" required>
+                    <br>
+                    <label for="Country">*Country</label>
+                    <br>
+                    <input type="text" class="Country" name="Country" required>
+                    <button class="formSumbit">Sumbit</button>
+                </form>
+            </div>
+        </section>
+
+
+    </body>
+
+    <script>
+
+        document.querySelector('.total').value = "$" + localStorage.total + " CAD";
+    
+        let tr = `<tr> <td> ${localStorage.name} </td>
+                    <td> ${localStorage.price} </td>
+            </tr>`;
+
+            console.log(tr);
+            
+
+            document.querySelector('.items table').innerHTML = tr;
+
+
+
+        document.querySelector('.form2').onsumbit = (e)=>{
+        // e.preventDefault();
+            alert('Order Sucessfull');
+            window.location.href='home.html';
+
+        }                
+                
+                
+
+    </script>
+
+    <script src="functions/index.js"></script>
+</html>

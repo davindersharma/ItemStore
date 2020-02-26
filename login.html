@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+    *{
+        font-family: 'Ubuntu';
+    }
+    .back-img{
+        width: 100%;
+        /* text-align: c */
+    }
+    .back-img form{
+        /* width:40%; */
+        margin: none;
+        /* text-align: center */
+    }
+    
+    
+    
+    </style>
+</head>
+
+<body>
+        <nav class="nav-bar">
+                <ul>
+                    <li style="float: left; font-size:35px;margin-top:-10px;margin-left:100px;text-shadow: 0px 0px 4px rgb(255, 255, 255, 0.8);">DAVINDER's WEBSITE</li>
+                    <li>HOME</li>
+                    <!-- <li>LOGIN</li> -->
+                </ul>
+            </nav>
+ 
+      <div class="back-img">
+             <form>
+                    <label for = "username">USERNAME</label><br>
+                    <input type = "text" id="username"><br>
+                    <label for = "password">PASSWORD</label><br>
+                    <input type = "password" id="password"><br>
+
+                    <a id="login" href="#"><input type = "button" id="btn" value="LOGIN"></a>
+                </form>
+      </div>
+      <footer>
+        <a href="#"><img src="./assets/Vector-4.png"></a>
+        <a href="#"><img src="./assets/fb.png"></a>
+        <a href="#"><img src="./assets/insta.png"></a>
+        <a href="#"><img src="./assets/vector.png"></a>
+            <p>copyright &copy Davinder sharma 2019 ALL rights Reserved</p>
+        </footer>
+
+    
+</body>
+
+<script>
+
+let data = [{
+    user: 'admin',
+    pass: '12345',
+
+}, {
+    user: 'roneet',
+    pass: '2222',
+
+}, {
+    user: 'roop',
+    pass: '3333',
+}];
+
+
+document.querySelector('#btn').onclick = function () {
+    let user = document.querySelector('#username').value.toUpperCase();
+    let pass = document.querySelector('#password').value.toUpperCase();
+
+    let foundUser = false;
+
+    for (let i = 0; i < data.length; i++) {
+        if (user === data[i].user.toUpperCase()) {
+            foundUser = true;
+            if (pass === data[i].pass.toUpperCase()) {
+                alert('Welcome ' + data[i].user);
+                document.querySelector('a#login').href = 'Welcome.html';
+                hide('form');
+            } else {
+                alert('Wrong Password');
+            }
+        }
+    }
+}
+
+</script>
+</html>
